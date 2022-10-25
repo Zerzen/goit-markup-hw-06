@@ -70,6 +70,58 @@
                 <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
+            <div class="form-wrap">
+              <h2>Залиште свої дані, ми вам передзвонимо</h2>
+              <form name="contact-form" autocomplete="on">
+                <label class="modal-label" for="uzer_name">Ім'я</label>
+                <div class="form-fild">
+                  <input class="input-modal" name="uzerName" id="uzer_name" type="text" />
+                  <span
+                    ><svg class="form-icons">
+                      <use href="./images/symbol-defs.svg#icon-person-form"></use>
+                    </svg>
+                  </span>
+                </div>
+                <label class="modal-label" for="uzer_tel">Телефон</label>
+                <div class="form-fild">
+                  <input class="input-modal" name="uzerTel" id="uzer_tel" type="tel" />
+                  <span
+                    ><svg class="form-icons">
+                      <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+                    </svg>
+                  </span>
+                </div>
+                <label class="modal-label" for="uzer_email">Пошта</label>
+                <div class="form-fild">
+                  <input class="input-modal" name="uzerEmail" id="uzer_email" type="email" />
+                  <span>
+                    <svg class="form-icons">
+                      <use href="./images/symbol-defs.svg#icon-email-form"></use>
+                    </svg>
+                  </span>
+                </div>
+                <label class="modal-label" for="uzer_comment">Коментар</label>
+                <textarea
+                  class="input-modal lable-area"
+                  placeholder="Введіть текст"
+                  name="uzerComment"
+                  id="uzer_comment"
+                  resize="none"
+                  rows="10"
+                ></textarea>
+
+                <label class="modal-label modal-agreement" for=""
+                  ><input
+                    type="checkbox"
+                    name="agreement"
+                    id="uzer_agreement"
+                    value="yes"
+                  />Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                </label>
+
+                <button class="hero-button send-button" type="button">Відправити</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -408,6 +460,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="wrap-mailing">
+          <p class="mailing-p">Підпишіться на розсилку</p>
+          <form>
+            <input class="mailing-input" placeholder="E-mail" type="email" />
+            <button class="hero-button button-mailing" type="button">
+              Підписатися
+              <svg class="svg-maling">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
